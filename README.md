@@ -79,3 +79,24 @@ m=manager(name,emp_id,dept)
 m.display_intern()
 m.display_employee()
 m.display_manager()
+
+
+class Input:
+    def __init__(self):
+        self.num1=int(input("enter the value of num1:"))
+        self.num2=int(input("enter the value of num2:"))
+class operate(Input):
+    def __init__(self):
+        super().__init__()
+    def add(self):
+        return self.num1+self.num2
+    def mul(self):
+            return self.num1*self.num2
+class result(operate):
+    def __init__(self):
+        super().__init__()
+    def display(self):
+        print(f"sum: {self.add()}")
+        print(f"mul: {self.mul()}")
+r=result()
+r.display()      
